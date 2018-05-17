@@ -44,10 +44,10 @@ namespace SURE.BasicLearningApplication._01___string_StringBuilder
         }
 
         //入口
-        static void Main(string[] args)
-        {
-            //实际证明string效率要比stringbuilder低
-            DifferenceMethod();
-        }
+        //static void Main(string[] args)
+        //{
+        //    //实际证明string效率要比stringbuilder低
+        //    DifferenceMethod();
+        //}
     }
 }
