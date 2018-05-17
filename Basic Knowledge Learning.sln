@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Basic Knowledge Learning", "02 - Basic Knowledge Learning", "{FB7E8A99-0222-4E21-AF37-8BEC1B2A1C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURE.DataEntity", "DataModel\SURE.DataEntity.csproj", "{ED6C29B3-CFEE-4AD0-A3F5-48C3760F62FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - DataEntity", "01 - DataEntity", "{CEA39769-7510-4749-8F0F-4564B55C543B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURE.BasicLearningForm", "SURE.BasicLearning.Form\SURE.BasicLearningForm.csproj", "{8AC49E68-E41C-4323-A6EF-CB4C42CDE3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURE.BasicLearningApplication", "SURE.BasicLearningApplication\SURE.BasicLearningApplication.csproj", "{182F6769-1AD6-433E-8660-4D8CAF1D1658}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Common", "03 - Common", "{D446DB73-CA4B-4F13-B0EA-327A6555EF6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURE.Common", "SURE.Common\SURE.Common.csproj", "{E55A6BD5-FF58-4868-92D9-7D7CBC60A6B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED6C29B3-CFEE-4AD0-A3F5-48C3760F62FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6C29B3-CFEE-4AD0-A3F5-48C3760F62FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6C29B3-CFEE-4AD0-A3F5-48C3760F62FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6C29B3-CFEE-4AD0-A3F5-48C3760F62FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC49E68-E41C-4323-A6EF-CB4C42CDE3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC49E68-E41C-4323-A6EF-CB4C42CDE3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC49E68-E41C-4323-A6EF-CB4C42CDE3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC49E68-E41C-4323-A6EF-CB4C42CDE3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182F6769-1AD6-433E-8660-4D8CAF1D1658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182F6769-1AD6-433E-8660-4D8CAF1D1658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182F6769-1AD6-433E-8660-4D8CAF1D1658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182F6769-1AD6-433E-8660-4D8CAF1D1658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55A6BD5-FF58-4868-92D9-7D7CBC60A6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55A6BD5-FF58-4868-92D9-7D7CBC60A6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E55A6BD5-FF58-4868-92D9-7D7CBC60A6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55A6BD5-FF58-4868-92D9-7D7CBC60A6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED6C29B3-CFEE-4AD0-A3F5-48C3760F62FF} = {CEA39769-7510-4749-8F0F-4564B55C543B}
+		{8AC49E68-E41C-4323-A6EF-CB4C42CDE3C7} = {FB7E8A99-0222-4E21-AF37-8BEC1B2A1C6A}
+		{182F6769-1AD6-433E-8660-4D8CAF1D1658} = {FB7E8A99-0222-4E21-AF37-8BEC1B2A1C6A}
+		{E55A6BD5-FF58-4868-92D9-7D7CBC60A6B9} = {D446DB73-CA4B-4F13-B0EA-327A6555EF6D}
+	EndGlobalSection
+EndGlobal
