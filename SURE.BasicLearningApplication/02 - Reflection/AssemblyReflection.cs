@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,10 +18,39 @@ namespace SURE.BasicLearningApplication._02___Reflection
             反射破坏单例模式，使单例失效，一样的多次创建对象；
         **/
 
+        //Reflection 反射
+        public static void ReflectionMethod()
+        {
+            string dllPath = @"D:\项目文件\Basic Knowledge Learning\Basic-Knowledge-Learning\DataModel\bin\Debug\SURE.DataEntity.dll";
+            //--------------LoadFrom 不会自动加载子程序集-----------------
+            //var assembly = Assembly.Load(dllPath);
+
+            //--------------LoadFrom 会自动加载子程序集-----------------
+            var assembly = Assembly.LoadFrom(dllPath);
+            //var assembly = Assembly.LoadFile(dllPath);
+
+            //--------------GetTypes 获取全部类型 or GetType 指定回去类型
+            var types = assembly.GetTypes();
+            //var type = assembly.GetType("SURE.DataEntity.Reflection.People");
+
+            Console.WriteLine("------------------------程序集全部类型-------------------------");
+            foreach (var type in types)
+            {
+                Console.WriteLine($"类名: {type.Name} ,完整路径: {type.FullName} ");
+
+                //全部方法
+                var typeMethhods = type.GetMethods(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+                foreach (var typeMethhod in typeMethhods)
+                {
+                    Console.WriteLine($"方法名: {typeMethhod.Name}");
+                }
+            }
+        }
+
         //入口
         static void Main(string[] args)
         {
-
+            ReflectionMethod();
         }
     }
 }

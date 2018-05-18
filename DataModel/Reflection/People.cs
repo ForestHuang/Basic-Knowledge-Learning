@@ -1,4 +1,4 @@
-﻿namespace SURE.DataEntity
+﻿namespace SURE.DataEntity.Reflection
 {
     /// <summary>
     /// People 人,用来测试反射
