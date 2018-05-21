@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="passWord" xml:space="preserve">
+    <value>sasa</value>
+    <comment>记录上一次登录密码</comment>
+  </data>
+  <data name="serverAddress" xml:space="preserve">
+    <value>.</value>
+    <comment>记录上一次的登录的服务器地址</comment>
+  </data>
+  <data name="strSql" xml:space="preserve">
+    <value>DECLARE @TableName nvarchar(35),@htmls varchar(8000)
+    DECLARE @字段名称 VARCHAR(200)
+    DECLARE @类型  VARCHAR(200)
+    DECLARE @长度 VARCHAR(200)
+    DECLARE @数值精度 VARCHAR(200)
+    DECLARE @小数位数 VARCHAR(200)
+    DECLARE @默认值 VARCHAR(200)
+    DECLARE @允许为空 VARCHAR(200)
+    DECLARE @外键 VARCHAR(200)
+    DECLARE @主键 VARCHAR(200)
+    DECLARE @描述 VARCHAR(200)
+    
+    SET NOCOUNT ON;
+
+    DECLARE Tbls CURSOR
+    FOR
+        Select distinct Table_name
+        FROM INFORMATION_SCHEMA.COLUMNS
+        order by Table_name
+    OPEN Tbls
+        PRINT '&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;'
+        PRINT '&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;'
+        PRINT '    &lt;head&gt;'
+        PRINT '        &lt;title&gt;数据库字典&lt;/title&gt;'
+        PRINT '        &lt;style type="text/css"&gt;'
+        PRINT '            body{margin:0; font:11pt "arial", "微软雅黑"; cursor:default;}'
+        PRINT '            .tableBox{margin:10px auto; padding:0px; width:1000px; height:auto; background:#FBF5E3; border:1px solid #45360A}'
+        PRINT '            .tableBox h3 {font-size:12pt; height:30px; line-height:30px; background:#45360A; padding:0px 0px 0px 15px; color:#FFF; margin:0px; text-align:left }'
+        PRINT '            .tableBox table {width:1000px; padding:0px }'
+        PRINT '            .tableBox th {height:25px; border-top:1px solid #FFF; border-left:1px solid #FFF; background:#F7EBC8; border-right:1px solid #E0C889; border-bottom:1px solid #E0C889 }'
+        PRINT '            .tableBox td {height:25px; padding-left:10px; border-top:1px solid #FFF; border-left:1px solid #FFF; border-right:1px solid #E0C889; border-bottom:1px solid #E0C889 }'
+        PRINT '        &lt;/style&gt;'
+        PRINT '    &lt;/head&gt;'
+        PRINT '    &lt;body&gt;'
+    FETCH NEXT FROM Tbls INTO @TableName
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+        Select @htmls = '        &lt;h3&gt;' + @TableName + ' : '+ CAST(Value as varchar(1000)) + '&lt;/h3&gt;'
+        FROM sys.extended_properties AS A
+        WHERE A.major_id = OBJECT_ID(@TableName)
+        and name = 'MS_Description' and minor_id = 0
+        PRINT '        &lt;div class="tableBox"&gt;'
+        PRINT @htmls
+        PRINT '            &lt;table cellspacing="0"&gt;'
+        PRINT '                &lt;tr style="background: #F7EBC8;"&gt;'
+		PRINT '                    &lt;td&gt;&lt;center&gt;&lt;b&gt;表名&lt;/b&gt;&lt;/center&gt;&lt;/td&gt;'
+		PRINT '                    &lt;td colspan="9"&gt;&lt;left&gt;&lt;b&gt;' + @TableName + '&lt;/b&gt;&lt;/left&gt;&lt;/td&gt;'
+	    PRINT '                &lt;/tr&gt;'
+        PRINT '                &lt;tr&gt;'
+        PRINT '                    &lt;th&gt;字段名称&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;类型&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;长度&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;数值精度&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;小数位数&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;默认值&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;允许为空&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;外键&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;主键&lt;/th&gt;'
+        PRINT '                    &lt;th&gt;描述&lt;/th&gt;'
+        PRINT '                &lt;/tr&gt;'
+        
+        DECLARE TRows CURSOR
+        FOR
+            SELECT
+            '                    &lt;td&gt;' + CAST(clmns.name AS VARCHAR(35)) + '&lt;/td&gt;',
+            '                    &lt;td&gt;' + CAST(udt.name AS CHAR(15)) + '&lt;/td&gt;' ,
+            '                    &lt;td&gt;' + CAST(CAST(CASE WHEN typ.name IN (N'nchar', N'nvarchar') AND clmns.max_length &lt;&gt; -1 THEN clmns.max_length/2 ELSE clmns.max_length END AS INT) AS VARCHAR(20)) + '&lt;/td&gt;',
+            '                    &lt;td&gt;' + CAST(CAST(clmns.precision AS INT) AS VARCHAR(20)) + '&lt;/td&gt;',
+            '                    &lt;td&gt;' + CAST(CAST(clmns.scale AS INT) AS VARCHAR(20)) + '&lt;/td&gt;',
+            '                    &lt;td&gt;' + isnull(CAST(cnstr.definition AS VARCHAR(20)),'') + '&lt;/td&gt;',
+            '                    &lt;td&gt;' + CAST(clmns.is_nullable AS VARCHAR(20)) + '&lt;/td&gt;' ,
+            '                    &lt;td&gt;' + CAST(clmns.is_computed AS VARCHAR(20)) + '&lt;/td&gt;' ,
+            '                    &lt;td&gt;' + CAST(clmns.is_identity AS VARCHAR(20)) + '&lt;/td&gt;' ,
+            '                    &lt;td&gt;' + ISNULL(CAST(exprop.value AS VARCHAR(500)),'') + '&lt;/td&gt;'
+            FROM sys.tables AS tbl 
+            INNER JOIN sys.all_columns AS clmns ON clmns.object_id=tbl.object_id
+            LEFT OUTER JOIN sys.indexes AS idx ON idx.object_id = clmns.object_id AND 1 =idx.is_primary_key
+            LEFT OUTER JOIN sys.index_columns AS idxcol ON idxcol.index_id = idx.index_id AND idxcol.column_id = clmns.column_id AND idxcol.object_id = clmns.object_id AND 0 = idxcol.is_included_column
+            LEFT OUTER JOIN sys.types AS udt ON udt.user_type_id = clmns.user_type_id
+            LEFT OUTER JOIN sys.types AS typ ON typ.user_type_id = clmns.system_type_id AND typ.user_type_id = typ.system_type_id
+            LEFT JOIN sys.default_constraints AS cnstr ON cnstr.object_id=clmns.default_object_id
+            LEFT OUTER JOIN sys.extended_properties exprop ON exprop.major_id = clmns.object_id AND exprop.minor_id = clmns.column_id AND exprop.name = 'MS_Description'
+            WHERE (tbl.name = @TableName and exprop.class = 1) --I don't wand to include comments on indexes
+            ORDER BY clmns.column_id ASC
+        OPEN TRows
+        FETCH NEXT FROM TRows INTO @字段名称,@类型,@长度,@数值精度,@小数位数,@默认值,@允许为空,@外键,@主键,@描述
+        WHILE @@FETCH_STATUS = 0
+        BEGIN
+            PRINT '                &lt;tr&gt;'
+            PRINT @字段名称
+            PRINT @类型
+            PRINT @长度
+            PRINT @数值精度
+            PRINT @小数位数
+            PRINT @默认值
+            PRINT @允许为空
+            PRINT @外键
+            PRINT @主键
+            PRINT @描述
+            PRINT '                &lt;/tr&gt;'
+            FETCH NEXT FROM TRows INTO @字段名称,@类型,@长度,@数值精度,@小数位数,@默认值,@允许为空,@外键,@主键,@描述
+        END
+        CLOSE TRows
+        DEALLOCATE TRows
+
+        PRINT '            &lt;/table&gt;'
+        PRINT '        &lt;/div&gt;'
+    FETCH NEXT FROM Tbls INTO @TableName
+    END
+        PRINT '    &lt;/body&gt;'
+        PRINT '&lt;/html&gt;'
+    CLOSE Tbls
+
+    DEALLOCATE Tbls</value>
+    <comment>生成数据库表字段Sql语句</comment>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>sa</value>
+    <comment>记录上一次登录的用户名</comment>
+  </data>
+</root>
