@@ -10,6 +10,10 @@ namespace SURE.BasicLearningApplication._02___Reflection
     class AssemblyReflection
     {
         /**
+            C#写的代码最终生成dll文件，也就是程序集。
+
+            dll = (IL + metedata:元数据)
+
             .Net中获取运行时类型信息的方式，.Net的应用程序由几个部分：‘程序集(Assembly)’、‘模块(Module)’、‘类型(class)’组成，而反射提供一种编程的方式，
             让程序员可以在程序运行期获得这几个组成部分的相关信息
             
