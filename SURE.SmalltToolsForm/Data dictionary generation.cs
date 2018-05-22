@@ -141,6 +141,7 @@ namespace SURE.SmalltToolsForm
             }
             var comDataBase = dataBaseList.Where(i => i.StartsWith(comboxDataBase.Text.Trim())).ToList();
             comboxDataBase.DataSource = comDataBase;
+            comboxDataBase.Focus();
         }
 
         //生成
