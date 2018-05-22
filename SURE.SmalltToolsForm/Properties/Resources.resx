@@ -208,7 +208,7 @@
             LEFT OUTER JOIN sys.types AS typ ON typ.user_type_id = clmns.system_type_id AND typ.user_type_id = typ.system_type_id
             LEFT JOIN sys.default_constraints AS cnstr ON cnstr.object_id=clmns.default_object_id
             LEFT OUTER JOIN sys.extended_properties exprop ON exprop.major_id = clmns.object_id AND exprop.minor_id = clmns.column_id AND exprop.name = 'MS_Description'
-            WHERE (tbl.name = @TableName and exprop.class = 1) --I don't wand to include comments on indexes
+            WHERE (tbl.name = @TableName ) --I don't wand to include comments on indexes
             ORDER BY clmns.column_id ASC
         OPEN TRows
         FETCH NEXT FROM TRows INTO @字段名称,@类型,@长度,@数值精度,@小数位数,@默认值,@允许为空,@外键,@主键,@描述
