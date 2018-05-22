@@ -29,7 +29,7 @@ namespace SURE.BasicLearningApplication._02___Reflection
             //--------------LoadFrom 不会自动加载子程序集-----------------
             //var assembly = Assembly.Load(dllPath);
 
-            //--------------LoadFrom 会自动加载子程序集-----------------
+            //--------------LoadFrom 会自动加载子程序集-------------------
             var assembly = Assembly.LoadFrom(dllPath);
             //var assembly = Assembly.LoadFile(dllPath);
 
