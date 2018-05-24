@@ -87,9 +87,9 @@ namespace SURE.BasicLearningApplication._02___Reflection
         }
 
         //入口
-        static void Main(string[] args)
-        {
-            ReflectionMethod();
-        }
+        //static void Main(string[] args)
+        //{
+        //    ReflectionMethod();
+        //}
     }
 }

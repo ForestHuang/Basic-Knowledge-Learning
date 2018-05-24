@@ -11,5 +11,20 @@ namespace SURE.BasicLearningApplication._03___delegate_event
     /// </summary>
     class delegateAndevent
     {
+        // ------------ 委托 -----------------
+        private delegate string HollWordDelegate(string name);
+
+        private static string HollWordMethod(string name)
+        {
+            Console.WriteLine($"{name}");
+            return name;
+        }
+
+        static void Main(string[] args)
+        {
+            HollWordDelegate hollWord = new HollWordDelegate(HollWordMethod);
+            hollWord.Invoke("senlin.huang");
+            Console.WriteLine();
+        }
     }
 }
