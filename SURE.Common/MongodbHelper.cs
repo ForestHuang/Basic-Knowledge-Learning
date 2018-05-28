@@ -97,6 +97,18 @@ namespace SURE.Common
             catch (Exception ex) { throw new Exception(ex.Message); }
         }
 
+        public List<T> FindAll(Expression<Func<T, bool>> func)
+        {
+            try
+            {
+                var collection = GetMongodbDataBase().GetCollection<T>(collectionName);
+                return collection.Find<T>(func).ToList<T>();
+
+            }
+            catch (Exception ex) { throw new Exception(ex.Message); }
+        }
+
+
         /// <summary>
         /// Quary Find （查询单条数据）
         /// </summary>

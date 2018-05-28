@@ -53,6 +53,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataModel\SURE.DataEntity.csproj">
+      <Project>{ed6c29b3-cfee-4ad0-a3f5-48c3760f62ff}</Project>
+      <Name>SURE.DataEntity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SURE.Common\SURE.Common.csproj">
       <Project>{e55a6bd5-ff58-4868-92d9-7d7cbc60a6b9}</Project>
       <Name>SURE.Common</Name>

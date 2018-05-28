@@ -1,4 +1,7 @@
-﻿namespace SURE.DataEntity.Reflection
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace SURE.DataEntity.Reflection
 {
     /// <summary>
     /// People 人,用来测试反射
@@ -8,6 +11,7 @@
         /// <summary>
         /// _id
         /// </summary>
+        [BsonRepresentation(BsonType.ObjectId)]
         public string _id { get; set; }
 
         private int peopleId;

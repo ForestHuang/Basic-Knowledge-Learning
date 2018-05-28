@@ -1,6 +1,9 @@
-﻿using System;
+﻿using SURE.Common;
+using SURE.DataEntity.Reflection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,11 +75,23 @@ namespace SURE.BasicLearningApplication._04___Lambad__Linq
         /// </summary>
         private static void LinqMethod()
         {
+            string serverHost = "mongodb://sure:HUANGsl@localhost/Sure_mongodbStudy";
+            string databaseName = "Sure_mongodbStudy";
+            string collectionName = "People";
+            MongodbHelper<People> mongodb = new MongodbHelper<People>(serverHost, databaseName, collectionName);
+            Expression<Func<People, bool>> func = i => i.PeopleId > 0;
+            List<People> list = null;
+            list = mongodb.FindAll(func);
+
+            list = mongodb.FindAll(func).Skip(10 * (1 - 1)).Take(10).ToList();
+            list.ForEach((x) => { Console.WriteLine(x.PeopleAddress); });
+            list = mongodb.FindAll(func).Where(i => i.PeopleAge <= 10).ToList();
 
         }
 
         static void Main(string[] args)
         {
+            LinqMethod();
             LambadMethod();
         }
 
