@@ -89,11 +89,11 @@ namespace SURE.BasicLearningApplication._04___Lambad__Linq
 
         }
 
-        static void Main(string[] args)
-        {
-            LinqMethod();
-            LambadMethod();
-        }
+        //static void Main(string[] args)
+        //{
+        //    LinqMethod();
+        //    LambadMethod();
+        //}
 
     }
 }
