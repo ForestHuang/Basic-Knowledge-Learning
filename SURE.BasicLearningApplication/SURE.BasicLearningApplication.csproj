@@ -47,6 +47,7 @@
     <Compile Include="02 - Reflection\AssemblyReflection.cs" />
     <Compile Include="03 - delegate、event\delegateAndevent.cs" />
     <Compile Include="04 - Lambad 、Linq\LambadAndLinq.cs" />
+    <Compile Include="05 - Generic %28泛型%29\Generic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
