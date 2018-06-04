@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.8.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,10 +52,13 @@
     <Compile Include="03 - delegate、event\delegateAndevent.cs" />
     <Compile Include="04 - Lambad 、Linq\LambadAndLinq.cs" />
     <Compile Include="05 - Generic %28泛型%29\Generic.cs" />
+    <Compile Include="06 - abstract\BasePeople.cs" />
+    <Compile Include="06 - abstract\Chinese.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataModel\SURE.DataEntity.csproj">
