@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,6 +35,11 @@ namespace SURE.BasicLearningApplication._05___Generic__泛型_
 
         static void Main(string[] args)
         {
+            Type type = typeof(People);
+            People entity = (People)Activator.CreateInstance(type);
+            PropertyInfo[] propertyInfos = type.GetProperties();
+            string strField = string.Join("(),", propertyInfos.Select(s => s.Name));
+            Console.WriteLine(strField);
             GenericMethod<People>(new People());
         }
     }
