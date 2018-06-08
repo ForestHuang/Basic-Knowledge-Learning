@@ -33,15 +33,15 @@ namespace SURE.BasicLearningApplication._05___Generic__泛型_
             Console.WriteLine("名称[typeof]: " + typeof(T).Name);
         }
 
-        static void Main(string[] args)
-        {
-            Type type = typeof(People);
-            People entity = (People)Activator.CreateInstance(type);
-            PropertyInfo[] propertyInfos = type.GetProperties();
-            string strField = string.Join("(),", propertyInfos.Select(s => s.Name));
-            Console.WriteLine(strField);
-            GenericMethod<People>(new People());
-        }
+        //static void Main(string[] args)
+        //{
+        //    Type type = typeof(People);
+        //    People entity = (People)Activator.CreateInstance(type);
+        //    PropertyInfo[] propertyInfos = type.GetProperties();
+        //    string strField = string.Join("(),", propertyInfos.Select(s => s.Name));
+        //    Console.WriteLine(strField);
+        //    GenericMethod<People>(new People());
+        //}
     }
 
     /// <summary>
