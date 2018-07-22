@@ -21,6 +21,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Developing a Gadget", "Deve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURE.SmalltToolsForm", "SURE.SmalltToolsForm\SURE.SmalltToolsForm.csproj", "{2ECA3936-049F-495B-A3B0-40DA0E1872D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{DB371771-3F16-45EC-B08A-234DA51F2231}"
+	ProjectSection(SolutionItems) = preProject
+		SURE.Common\bin\Debug\ChnCharInfo.dll = SURE.Common\bin\Debug\ChnCharInfo.dll
+		SURE.Common\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll = SURE.Common\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+		..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Bson.dll = ..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Bson.dll
+		..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\Mongodb.Common.dll = ..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\Mongodb.Common.dll
+		..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Driver.Core.dll = ..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Driver.Core.dll
+		..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Driver.dll = ..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Driver.dll
+		SURE.Common\bin\Debug\NPinyin.dll = SURE.Common\bin\Debug\NPinyin.dll
+		..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\System.Buffers.dll = ..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\System.Buffers.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

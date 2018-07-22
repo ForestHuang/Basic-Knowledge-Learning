@@ -4,6 +4,9 @@ using System.Text;
 
 namespace SURE.Common
 {
+    /// <summary>
+    /// 汉字转全拼(首字母、全拼)
+    /// </summary>
     public class ChineseHelper
     {
         /// <summary>

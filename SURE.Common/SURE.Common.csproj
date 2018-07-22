@@ -37,6 +37,18 @@
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="Mongodb.Common">
+      <HintPath>..\..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\Mongodb.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\..\..\MongodDB\Mongodb.Study\Mongodb.Common\bin\Debug\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
     <Reference Include="NPinyin, Version=0.2.6321.26573, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NPinyin.0.2.6321.26573\lib\net20\NPinyin.dll</HintPath>
       <Private>True</Private>
@@ -52,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChineseHelper.cs" />
+    <Compile Include="MongodbHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
