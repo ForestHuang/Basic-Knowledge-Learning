@@ -61,7 +61,7 @@ namespace SURE.SmalltToolsForm.Properties {
         }
         
         /// <summary>
-        ///   查找类似 sasa 的本地化字符串。
+        ///   查找类似 exfhYR6uoPH6vLFl12KL 的本地化字符串。
         /// </summary>
         internal static string passWord {
             get {
@@ -70,7 +70,7 @@ namespace SURE.SmalltToolsForm.Properties {
         }
         
         /// <summary>
-        ///   查找类似 . 的本地化字符串。
+        ///   查找类似 47.98.203.56 的本地化字符串。
         /// </summary>
         internal static string serverAddress {
             get {

@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="passWord" xml:space="preserve">
-    <value>sasa</value>
+    <value>exfhYR6uoPH6vLFl12KL</value>
     <comment>记录上一次登录密码</comment>
   </data>
   <data name="serverAddress" xml:space="preserve">
-    <value>.</value>
+    <value>47.98.203.56</value>
     <comment>记录上一次的登录的服务器地址</comment>
   </data>
   <data name="strSql" xml:space="preserve">
@@ -163,10 +163,9 @@
     FETCH NEXT FROM Tbls INTO @TableName
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        Select @htmls = '        &lt;h3&gt;' + @TableName + ' : '+ CAST(Value as varchar(1000)) + '&lt;/h3&gt;'
-        FROM sys.extended_properties AS A
-        WHERE A.major_id = OBJECT_ID(@TableName)
-        and name = 'MS_Description' and minor_id = 0
+        --Select @htmls = '        &lt;h3&gt;' + @TableName + ' : '+ CAST(ISNULL(value,'') as varchar(1000)) + '&lt;/h3&gt;'
+        --FROM sys.extended_properties AS ex_p
+        --WHERE ex_p.minor_id=0 AND ex_p.major_id in (select id from sys.sysobjects a WHERE a.name=''+@TableName+'' ) 
         PRINT '        &lt;div class="tableBox"&gt;'
         PRINT @htmls
         PRINT '            &lt;table cellspacing="0"&gt;'
