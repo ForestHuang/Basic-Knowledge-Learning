@@ -36,7 +36,7 @@ namespace SURE.Common
             }
             catch (Exception ex)
             {
-                return $"转换失败,错误: {ex.Message}";
+                return $"errorMessage: {ex.Message}";
             }
 
             return string.Empty;
@@ -68,12 +68,12 @@ namespace SURE.Common
             }
             catch (Exception ex)
             {
-                return $"转换失败,错误: {ex.Message}";
+                return $"errorMessage: {ex.Message}";
             }
             return string.Empty;
         }
 
-        #region Private
+        #region private
 
         /// <summary>
         /// 单个字母转换成全拼

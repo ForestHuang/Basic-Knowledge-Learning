@@ -28,27 +28,25 @@ namespace SURE.BasicLearningApplication._05___Generic__泛型_
         private static void GenericMethod<T>(T type)
         {
             //-------------GetType、typeof 获取相关类型名称-----------
-            People people = new People();
+            People<int> people = new People<int>();
             Console.WriteLine("名称[GetType]: " + type.GetType().Name);
             Console.WriteLine("名称[typeof]: " + typeof(T).Name);
-        }
 
-        //static void Main(string[] args)
-        //{
-        //    Type type = typeof(People);
-        //    People entity = (People)Activator.CreateInstance(type);
-        //    PropertyInfo[] propertyInfos = type.GetProperties();
-        //    string strField = string.Join("(),", propertyInfos.Select(s => s.Name));
-        //    Console.WriteLine(strField);
-        //    GenericMethod<People>(new People());
-        //}
+            //键值对集合
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            //Dictionary<string, string> 实现 IEnumerable<KeyValuePair<string, string>>
+        }
     }
+
+    #region 泛型实体对象
 
     /// <summary>
     /// People
     /// </summary>
-    public class People
+    public class People<T>
     {
+        public List<T> peopleList { get; set; }
+
         private int peopleId;
         /// <summary>
         /// PeopleId
@@ -84,5 +82,31 @@ namespace SURE.BasicLearningApplication._05___Generic__泛型_
         /// </summary>
         public string PeopleSex { get; set; }
 
+        #region 泛型方法
+
+        public static Ttype AddMethod<Ttype>(Ttype tvalue, Ttype tvalueTwo) where Ttype : struct
+        {
+            return (dynamic)tvalue + tvalueTwo;
+        }
+
+        #endregion
+
+        #region 泛型委托
+
+        delegate void AddDelegate<Ttype>(Ttype tvalue);
+
+        #endregion
+
     }
+
+    #endregion
+
+    #region 泛型接口
+
+    interface IGeneric<Tkey>
+    {
+        void Add(Tkey tvalue);
+    }
+
+    #endregion
 }
